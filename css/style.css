@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+.upload input[type='file'] {
+    border: 3px dashed #999;
+    padding: 140px 50px 10px 50px;
+    cursor: move;
+    position:relative;
+	width:100%;
+	box-sizing:border-box;
+}
+.upload input[type='file']:before {
+    content: "drag & drop your files here";
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 40px;
+    margin: -25px 0 0 -100px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #999;
+}
+.box2{
+	padding:20px;
+	box-sizing:border-box;
+	width:100%;
+	background:#fff;
+}
+
+
+ .wideBox {
+    clear: both;
+    text-align: center;
+    margin: 70px;
+    padding: 10px;
+    background: #ebedf2;
+    border: 1px solid #333;
+}
+.wideBox h1 {
+    font-weight: bold;
+    margin: 20px;
+    color: #666;
+    font-size: 1.5em;
+}
+#cardSlots {
+    margin: 50px auto 0 auto;
+}
+#cardPile {
+    margin: 0 auto;
+}
+#cardPile {
+    width: 1200px;
+    height: 120px;
+    padding: 20px;
+}
+#cardSlots {
+    width: 1200px;
+    height: 1000px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+}
+#cardSlots div, #cardPile div {
+    float: left;
+    width: 80px;
+    height: 50px;
+    padding: 10px;
+    padding-bottom: 0;
+    border: 1px solid #333;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0 0 0 10px;
+    background: #fff;
+}
+#cardSlots div:first-child, #cardPile div:first-child {
+    margin-left: 0;
+}
+#cardSlots div.hovered {
+    background: #aaa;
+}
+#cardSlots div {
+    border: 1px dashed #333;
+}
+#cardPile div {
+    background: #fff;
+    border: 1px solid #005575;
+    color: #000;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3;
+}
+#cardPile div.ui-draggable-dragging {
+    -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+#card1.correct {
+    background: #5fcf80;
+    color: #fff;
+}
